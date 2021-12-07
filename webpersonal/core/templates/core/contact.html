@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Contacto {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Contacto</h1>
+    <span class="subheading">Asesoría</span>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>{% lorem how_many_paragraphs %}</p>
+          <br>
+          <p><b>Teléfono:</b>+593 983580909</p>
+          <p><b>Honorarios:</b> 120$ (precio negociable)</p>
+        </div>
+      </div>
+    </div>
+{% endblock %}

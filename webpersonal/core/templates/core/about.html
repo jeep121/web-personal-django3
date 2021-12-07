@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block title %} A cerca de {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/perfil.jpeg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Jefferson Pérez</h2>   
+          <p>Joven estudiante de 19 años, nacido en la ciudad de Portoviejo, 
+          apasionado por la informática y los deportes, en especial el fútbol.</p>
+          <p>Leer y guardar frases es uno de sus pasatiempos, una de sus 
+          favoritas "Busca lo que amas y persíguelo hasta la gloria".</p>
+          <p>La humildad y la perseverancia son fundamentales para conseguir 
+           objetivos que nos propongamos, confía en Dios y rema hacia adelnate.</p>
+        </div>
+      </div>  
+    </div>
+
+{% endblock %}
